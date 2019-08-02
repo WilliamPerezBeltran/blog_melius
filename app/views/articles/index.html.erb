@@ -5,6 +5,7 @@
 
 <table>
   <tr>
+    <th></th>
     <th>id</th>
     <th>title</th>
     <th>text</th>
@@ -13,7 +14,13 @@
   </tr>
   <% @articles.each do |article| %>
 	  <tr>
-	    <td><%= article.id %></td>
+
+	    <td>
+        <div class="icon-desktop">
+                <a href="#"><img src="https://image.noelshack.com/fichiers/2018/18/6/1525513595-screenshot-5.png" alt=""><span>File Explorer</span></a>
+            </div> 
+      </td>
+      <td><%= article.id %></td>
 	    <td><%= article.title %></td>
 	    <td><%= article.text %></td>
 	    <td><%= link_to 'show', article_path(article) %></td>
@@ -25,19 +32,19 @@
 </table>
 
 
-
-    <!-- Desktop -->
-    <div class="desktop">
-
         <!-- Icons on the desktop -->
-        <div class="icons-dekstop">
           
+            
+            
+
+       
+
+    <!-- <div class="desktop">
+        <div class="icons-dekstop">
             <div class="icon-desktop">
                 <a href="#"><img src="https://image.noelshack.com/fichiers/2018/18/6/1525513595-screenshot-5.png" alt=""><span>File Explorer</span></a>
             </div>
-            
         </div>
-
-       
     </div>
 
+ -->
