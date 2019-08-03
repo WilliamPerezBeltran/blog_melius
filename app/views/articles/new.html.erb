@@ -1,8 +1,13 @@
-<h1>new article </h1>
-<%= render 'form'%>
-<p><%= link_to 'back', articles_path%></p>
+<div class="container">
+	<h1>Nueva carpeta</h1>
+	<%= render 'form'%>
+	 <%= link_to(articles_path) do %>
+        <%= content_tag(:i, "arrow_back", class: "material-icons", style: "color:white; font-size:20px") %>
+      <% end %>
 
 
+
+</div>
 
 
 
