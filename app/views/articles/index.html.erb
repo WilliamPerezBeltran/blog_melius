@@ -30,14 +30,14 @@
 
                   <div style="display: flex;justify-content: space-around; width:100%">
                     <%= link_to(edit_article_path(article)) do %>
-                    <%= content_tag(:i, "edit", class: "material-icons", style: "color:white; font-size:13px") %>
+                      <%= content_tag(:i, "edit", class: "material-icons", style: "color:white; font-size:13px") %>
                     <% end %>
 
 
                     
 
                     <%= link_to article_path(article), :method => :delete do %>
-                    <%= content_tag(:i, "close", class: "material-icons", style: "color:white; font-size:13px") %>
+                      <%= content_tag(:i, "close", class: "material-icons", style: "color:white; font-size:13px") %>
                     <% end %>
                     
                   </div>

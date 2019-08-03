@@ -61,8 +61,20 @@
     <%= form.submit :class => 'btn btn-primary' %>
 <% end %>
  
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+
+
+
+<%= link_to(edit_article_path(@article)) do %>
+  <%= content_tag(:i, "edit", class: "material-icons", style: "color:white; font-size:13px") %>
+<% end %>
+
+
+
+
+<%= link_to articles_path do %>
+  <%= content_tag(:i, "arrow_back", class: "material-icons", style: "color:white; font-size:20px") %>
+<% end %>
+
 
 
 
