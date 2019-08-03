@@ -9,7 +9,22 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+
+
+  <!-- layout-h will adapt the layout position -->
+<body class="layout-h" style="background-color:#063054; color:white">
+   <div class="container-fluid" >
+      <section>
+         <!-- Page content-->
+         <div>
+            <%= yield %>
+         </div>
+      </section>
+     
+   </div>
+</body>
+
+
+
+
 </html>
