@@ -38,6 +38,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'redcarpet'
 gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails'
+gem "material_icons"
+
 
 
 group :development, :test do
