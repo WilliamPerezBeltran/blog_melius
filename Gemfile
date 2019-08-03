@@ -39,7 +39,7 @@ gem 'redcarpet'
 gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails'
 gem "material_icons"
-
+gem 'ckeditor_rails' 
 
 
 group :development, :test do
